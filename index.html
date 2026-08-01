@@ -148,6 +148,16 @@
             color: #555;
             margin-top: 15px;
         }
+        .vcf-box {
+            text-align: center;
+        }
+        .hint {
+            display: block;
+            margin-top: 5px;
+            font-size: 11px;
+            color: #aaa;
+        }
+
     </style>
 </head>
 <body>
@@ -188,11 +198,14 @@
             📞 +998 91 282 21 22
         </a>
 
-       <!-- Android uchun to'g'ridan-to'g'ri kontakt yaratish oynasi -->
-       <a href="intent://add/#Intent;scheme=contacts;S.name=Shohrux%20%7C%20Uz%20Brend%20G'ishtlari;S.phone_mobile=%2B998990972122;S.phone_home=%2B998912822122;end" class="action-row btn-vcf">
-         <span class="icon">📇</span>
-         <span class="text">Kontaktni saqlash</span>
-      </a>
+       <div class="vcf-box">
+           <a href="contact.vcf" class="action-row btn-vcf">
+              <span class="icon">📇</span>
+              <span class="text">Kontaktni saqlash</span>
+           </a>
+           <small class="hint">💡 Tugmani bosgach, yuklangan faylni oching va "Saqlash"ni bosing</small>
+        </div>
+
 
         <a href="https://t.me/+998912822122" target="_blank" class="btn btn-tg">
             ✈️ Telegramga yozish 1
