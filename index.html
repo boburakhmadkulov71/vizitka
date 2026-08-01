@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uz Brend G'ishtlari — Raqamli Vizitka</title>
+    <title>Uz Brend G'ishtlari</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
         * {
             box-sizing: border-box;
@@ -38,63 +39,63 @@
 
         /* --- YANGI BANNER VA AVATAR STILLARI --- */
 
-/* 1. Asosiy konteynerni yangilash */
-.card-container {
-    width: 100%;
-    max-width: 400px;
-    background-color: #1e1e1e;
-    border-radius: 20px;
-    overflow: hidden; /* Rasmlar burchakdan chiqib ketmasligi uchun muhim */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* 2. Banner zonasi */
-.header-banner {
-    position: relative;
-    width: 100%;
-    height: 160px; /* Banner balandligi - to'g'ri to'rtburchak albomniy format */
-}
-.banner-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Rasmni to'g'ri to'rtburchakka proporsional joylash */
-}
-
-/* 3. Bottom-Left Avatar (ustma-ust tushishi) */
-.avatar-wrapper {
-    position: absolute;
-    bottom: -30px; /* Bannerdan pastga chiqib turishi uchun */
-    left: 20px;    /* Chap tomondan masofa */
-}
-.avatar-img {
-    width: 75px;  /* Kichkina avatarka */
-    height: 75px;
-    border-radius: 50%; /* Dumaloq avatar (To'rtburchak uchun: border-radius: 12px) */
-    border: 4px solid #1e1e1e; /* Kartochka foni bilan ajratuvchi liniya */
-    object-fit: cover;
-    background-color: #333;
-}
-
-/* 4. Ma'lumotlar qismi uchun qobiq */
-.content-wrapper {
-    padding: 40px 20px 20px 20px; /* Tepadan avatar sig'ishi uchun joy ochamiz */
-}
-
-/* 5. Ism va Brend stilari */
-.brand-name {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    margin: 0;
-}
-.owner-name {
-    color: #d97706; /* Bronza/Deep Gold */
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 2px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
+        /* 1. Asosiy konteynerni yangilash */
+        .card-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #1e1e1e;
+            border-radius: 20px;
+            overflow: hidden; /* Rasmlar burchakdan chiqib ketmasligi uchun muhim */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+        
+        /* 2. Banner zonasi */
+        .header-banner {
+            position: relative;
+            width: 100%;
+            height: 160px; /* Banner balandligi - to'g'ri to'rtburchak albomniy format */
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Rasmni to'g'ri to'rtburchakka proporsional joylash */
+        }
+        
+        /* 3. Bottom-Left Avatar (ustma-ust tushishi) */
+        .avatar-wrapper {
+            position: absolute;
+            bottom: -30px; /* Bannerdan pastga chiqib turishi uchun */
+            left: 20px;    /* Chap tomondan masofa */
+        }
+        .avatar-img {
+            width: 75px;  /* Kichkina avatarka */
+            height: 75px;
+            border-radius: 50%; /* Dumaloq avatar (To'rtburchak uchun: border-radius: 12px) */
+            border: 4px solid #1e1e1e; /* Kartochka foni bilan ajratuvchi liniya */
+            object-fit: cover;
+            background-color: #333;
+        }
+        
+        /* 4. Ma'lumotlar qismi uchun qobiq */
+        .content-wrapper {
+            padding: 40px 20px 20px 20px; /* Tepadan avatar sig'ishi uchun joy ochamiz */
+        }
+        
+        /* 5. Ism va Brend stilari */
+        .brand-name {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
+        .owner-name {
+            color: #d97706; /* Bronza/Deep Gold */
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
 
 
         h1 {
@@ -214,20 +215,20 @@
     <div class="card-container">
         <!-- BANNER VA AVATAR ZONASI -->
         <div class="header-banner">
-          <!-- Orqa fonga katta albomniy rasm (Masalan: photo.png yoki banner.jpg) -->
-          <img src="photo.png" alt="Uz Brend G'ishtlari Banner" class="banner-img">
-    
-         <!-- BOTTOM-LEFT AVATAR (Kichik rasm/Logotip, Masalan: logo.png) -->
-         <div class="avatar-wrapper">
-           <img src="logo.png" alt="Avatar" class="avatar-img">
+              <!-- Orqa fonga katta albomniy rasm (Masalan: photo.png yoki banner.jpg) -->
+              <img src="photo.png" alt="Uz Brend G'ishtlari Banner" class="banner-img">
+        
+             <!-- BOTTOM-LEFT AVATAR (Kichik rasm/Logotip, Masalan: logo.png) -->
+             <div class="avatar-wrapper">
+               <img src="logo.png" alt="Avatar" class="avatar-img">
+            </div>
         </div>
-    </div>
 
 <!-- MA'LUMOTLAR QISMI -->
 
 <div class="content-wrapper">
-    <h1 class="brand-name">UZ BREND G'ISHTLARI</h1>
-    <div class="owner-name">SHOHRUX</div>
+        <h1 class="brand-name">UZ BREND G'ISHTLARI</h1>
+        <div class="owner-name">SHOHRUX IBROHIMOV</div>
     
 
         <div class="badges">
