@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uz Brend G'ishtlari — Raqamli Vizitka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .card-container {
+            width: 100%;
+            max-width: 420px;
+            background: linear-gradient(145deg, #181818, #0a0a0a);
+            border: 1px solid #2a2a2a;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(184, 29, 29, 0.2);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #b81d1d;
+            margin: 0 auto 15px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(184, 29, 29, 0.5);
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #b81d1d;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 11px;
+        }
+
+        .badge {
+            background: #222;
+            padding: 6px 12px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            color: #ddd;
+        }
+
+        .section-title {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 10px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-phone {
+            background: #b81d1d;
+            color: white;
+            box-shadow: 0 4px 12px rgba(184, 29, 29, 0.4);
+        }
+
+        .btn-tg {
+            background: #0088cc;
+            color: white;
+        }
+
+        .btn-insta {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+        }
+
+        .products {
+            background: #141414;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+            border: 1px solid #222;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid #222;
+            font-size: 14px;
+        }
+
+        .product-item:last-child {
+            border-bottom: none;
+        }
+
+        .footer {
+            font-size: 11px;
+            color: #555;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Logotip (Papkadagi logo.png rasmi) -->
+        <img src="photo.png" alt="Uz Brend G'ishtlari" class="logo">
+        
+        <h1>UZ BREND G'ISHTLARI</h1>
+        <div class="subtitle">Shohrux</div>
+
+        <div class="badges">
+            <span class="badge">🛡️ Sifat</span>
+            <span class="badge">🧱 Ishonch</span>
+            <span class="badge">🤝 Mustahkamlik</span>
+        </div>
+
+        <div class="products">
+            <div class="section-title">Bizda mavjud:</div>
+            <div class="product-item">
+                <span>🧱 "Paltarashka" g'isht 250x120x88 mm razmerli</span>
+            </div>
+            <div class="product-item">
+                <span>🧱 "Standart" g'isht 250x120x65 mm razmerli</span>
+            </div>
+            <div class="product-item">
+                <span style="color: #aaa;">🚛 Yetkazib berish Howo va Kamaz yuk mashinalarida amalga oshiriladi.</span>
+            </div>
+        </div>
+
+        <div class="section-title">Bog'lanish:</div>
+
+        <a href="tel:+998990972122" class="btn btn-phone">
+            📞 +998 99 097 21 22
+        </a>
+
+        <a href="tel:+998912822122" class="btn btn-phone">
+            📞 +998 91 282 21 22
+        </a>
+
+       <a href="contact.vcf" class="btn btn-phone" download>
+             📇 Kontaktni telefonga saqlash
+       </a>
+
+        <a href="https://t.me/+998912822122" target="_blank" class="btn btn-tg">
+            ✈️ Telegramga yozish 1
+        </a>
+
+        <a href="https://t.me/+998990972122 target="_blank" class="btn btn-tg">
+            ✈️ Telegramga yozish 2
+        </a>
+
+        <a href="https://instagram.com/SHOHR_UX1128" target="_blank" class="btn btn-insta">
+            📸 Instagram sahifamiz
+        </a>
+
+
+        <div class="footer">
+            © Uz Brend G'ishtlari. Barcha huquqlar himoyalangan.
+        </div>
+    </div>
+
+</body>
+</html>
