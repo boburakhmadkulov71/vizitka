@@ -216,6 +216,44 @@
             letter-spacing: 0.5px;
         }
 
+        /* Blok va sarlavha */
+        .products {
+            text-align: center;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        /* Har bir mahsulot bloki (rasm va matn ustma-ust bo'ladi) */
+        .product-item {
+            display: flex;
+            flex-direction: column; /* SVG tepada, matn pastda */
+            align-items: center;    /* O'rtaga tekislash */
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* SVG o'lchami va joylashuvi */
+        .product-svg {
+            margin-bottom: 8px; /* SVG va matn orasidagi masofa */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Matn stili */
+        .product-item span {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        /* Yetkazib berish qismi uchun masofa */
+        .delivery-item {
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -247,13 +285,55 @@
 
         <div class="products">
             <div class="section-title">Bizda mavjud:</div>
+
+            <!-- Paltarashka g'isht (Teshikli SVG) -->
             <div class="product-item">
-                <span>🧱 "Paltarashka" g'isht <br> 19ta teshikli va 250x120x88 mm razmerli</span>
+                <div class="product-svg">
+                    <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="60" height="40" rx="4" fill="#E0533C"/>
+                        
+                        <!-- 1-qator (6 ta teshik) -->
+                        <circle cx="8"  cy="10" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="17" cy="10" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="26" cy="10" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="34" cy="10" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="43" cy="10" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="52" cy="10" r="2.5" fill="#1C1C1E"/>
+
+                        <!-- 2-qator (7 ta teshik) -->
+                        <circle cx="6"  cy="20" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="14" cy="20" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="22" cy="20" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="30" cy="20" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="38" cy="20" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="46" cy="20" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="54" cy="20" r="2.5" fill="#1C1C1E"/>
+
+                        <!-- 3-qator (6 ta teshik) -->
+                        <circle cx="8"  cy="30" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="17" cy="30" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="26" cy="30" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="34" cy="30" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="43" cy="30" r="2.5" fill="#1C1C1E"/>
+                        <circle cx="52" cy="30" r="2.5" fill="#1C1C1E"/>
+                    </svg>
+                </div>
+                <span>"Paltarashka" g'isht 250x120x88 mm razmerli</span>
             </div>
+
+            <!-- Standart g'isht (Teshiksiz SVG) -->
             <div class="product-item">
-                <span>🧱 "Standart" g'isht <br> teshiklarsiz va 250x120x65 mm razmerli</span>
+                <div class="product-svg">
+                    <svg width="60" height="30" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="60" height="30" rx="4" fill="#C8432D"/>
+                        <path d="M0 15 H60 M20 0 V15 M40 0 V15 M10 15 V30 M30 15 V30 M50 15 V30" stroke="#A3321F" stroke-width="2"/>
+                    </svg>
+                </div>
+                <span>"Standart" g'isht 250x120x65 mm razmerli</span>
             </div>
-            <div class="product-item">
+
+            <!-- Yetkazib berish -->
+            <div class="product-item delivery-item">
                 <span style="color: #aaa;">🚛 Yetkazib berish Howo va Kamaz yuk mashinalarida amalga oshiriladi.</span>
             </div>
         </div>
