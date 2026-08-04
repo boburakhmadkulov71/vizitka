@@ -16,9 +16,10 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        /* --- LIGHT REJIM (OQ FON, QORA MATN) --- */
         body {
-            background-color: #0d0d0d;
-            color: #ffffff;
+            background-color: #f3f4f6; /* Och kulrang orqa fon */
+            color: #111827; /* Qora matn */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,88 +29,59 @@
 
         .card-container {
             width: 100%;
-            max-width: 420px;
-            background: linear-gradient(145deg, #181818, #0a0a0a);
-            border: 1px solid #2a2a2a;
+            max-width: 400px;
+            background-color: #ffffff; /* Oq kartochka foni */
+            border: 1px solid #e5e7eb;
             border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(184, 29, 29, 0.2);
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             text-align: center;
         }
 
-        /* --- YANGI BANNER VA AVATAR STILLARI --- */
-
-        /* 1. Asosiy konteynerni yangilash */
-        .card-container {
-            width: 100%;
-            max-width: 400px;
-            background-color: #1e1e1e;
-            border-radius: 20px;
-            overflow: hidden; /* Rasmlar burchakdan chiqib ketmasligi uchun muhim */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-        }
-        
-        /* 2. Banner zonasi */
+        /* Banner zonasi */
         .header-banner {
             position: relative;
             width: 100%;
-            height: 170px; /* Banner balandligi - to'g'ri to'rtburchak albomniy format */
+            height: 170px;
         }
         .banner-img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Rasmni to'g'ri to'rtburchakka proporsional joylash */
+            object-fit: cover;
         }
-        
-        /* 3. Bottom-Left Avatar (ustma-ust tushishi) */
+
+        /* Bottom-Left Avatar */
         .avatar-wrapper {
             position: absolute;
-            bottom: -40px; /* Bannerdan pastga chiqib turishi uchun */
-            left: 10px;    /* Chap tomondan masofa */
+            bottom: -40px;
+            left: 10px;
         }
         .avatar-img {
-            width: 75px;  /* Kichkina avatarka */
+            width: 75px;
             height: 75px;
-            border-radius: 50%; /* Dumaloq avatar (To'rtburchak uchun: border-radius: 12px) */
-            border: 4px solid #1e1e1e; /* Kartochka foni bilan ajratuvchi liniya */
+            border-radius: 50%;
+            border: 4px solid #ffffff; /* Oq ajratuvchi liniya */
             object-fit: cover;
-            background-color: #333;
+            background-color: #e5e7eb;
         }
-        
-        /* 4. Ma'lumotlar qismi uchun qobiq */
+
+        /* Ma'lumotlar qismi */
         .content-wrapper {
-            padding: 50px 20px 20px 20px; /* Tepadan avatar sig'ishi uchun joy ochamiz */
+            padding: 50px 20px 20px 20px;
         }
-        
-        /* 5. Ism va Brend stilari */
+
         .brand-name {
             font-size: 22px;
             font-weight: 800;
             letter-spacing: 0.5px;
             margin: 0;
+            color: #111827; /* Qora rang */
         }
         .owner-name {
-            color: #d97706; /* Bronza/Deep Gold */
+            color: #d97706; /* Bronza/Altin rang saqlab qolindi */
             font-size: 14px;
             font-weight: 600;
             margin-top: 2px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
-
-
-        h1 {
-            font-size: 22px;
-            font-weight: 800;
-            color: #fff;
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-        }
-
-        .subtitle {
-            font-size: 14px;
-            color: #b81d1d;
-            font-weight: 600;
             margin-bottom: 15px;
             text-transform: uppercase;
         }
@@ -123,22 +95,63 @@
         }
 
         .badge {
-            background: #222;
+            background: #f3f4f6;
             padding: 6px 12px;
             border-radius: 12px;
-            border: 1px solid #333;
-            color: #ddd;
+            border: 1px solid #e5e7eb;
+            color: #374151; /* To'q kulrang matn */
+            font-weight: 600;
         }
 
         .section-title {
-            font-size: 13px;
-            color: #888;
-            margin-bottom: 10px;
-            text-align: left;
+            font-size: 14px;
+            color: #4b5563; /* Sarlavha uchun to'qroq kulrang */
+            margin-bottom: 12px;
+            text-align: center;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            font-weight: 700;
         }
 
+        /* Mahsulotlar bloki */
+        .products {
+            background: #f9fafb; /* Juda och kulrang blok foni */
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .product-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            color: #1f2937; /* Qora-to'q rang */
+        }
+
+        .product-svg {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-item span {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 500;
+            color: #111827;
+        }
+
+        .delivery-item {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+        /* Tugmalar */
         .btn {
             display: flex;
             align-items: center;
@@ -161,98 +174,36 @@
         .btn-phone {
             background: #10B981;
             color: white;
-            box-shadow: 0 4px 12px rgba(184, 29, 29, 0.4);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
         }
         .btn-amber {
             background-color: #D97706;
             color: #ffffff;
         }
         .btn-amber:active {
-            background-color: #B45309; /* Bosilganda to'qroq tus oladi */
-            transform: scale(0.98);
+            background-color: #B45309;
         }
         .btn-tg {
             background: #0088cc;
             color: white;
         }
-
         .btn-insta {
             background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
             color: white;
         }
 
-        .products {
-            background: #141414;
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 20px;
-            text-align: left;
-            border: 1px solid #222;
-        }
-
-        .product-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 6px 0;
-            border-bottom: 1px solid #222;
-            font-size: 14px;
-        }
-
-        .product-item:last-child {
-            border-bottom: none;
-        }
-
         .footer {
             font-size: 11px;
-            color: #555;
+            color: #6b7280;
             margin-top: 15px;
         }
         .footer-copyright {
-            text-align: left;       /* Chap tomonga joylashtirish */
-            font-size: 11px;        /* Kichik va shinam shrift */
-            color: #777777;         /* Ko'zga tashlanmaydigan mayin kulrang */
-            margin-top: 20px;
+            text-align: left;
+            font-size: 11px;
+            color: #9ca3af;
             font-weight: 500;
             letter-spacing: 0.5px;
-        }
-
-        /* Blok va sarlavha */
-        .products {
-            text-align: center;
-        }
-
-        .section-title {
-            font-weight: bold;
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-
-        /* Har bir mahsulot bloki (rasm va matn ustma-ust bo'ladi) */
-        .product-item {
-            display: flex;
-            flex-direction: column; /* SVG tepada, matn pastda */
-            align-items: center;    /* O'rtaga tekislash */
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        /* SVG o'lchami va joylashuvi */
-        .product-svg {
-            margin-bottom: 8px; /* SVG va matn orasidagi masofa */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Matn stili */
-        .product-item span {
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        /* Yetkazib berish qismi uchun masofa */
-        .delivery-item {
-            margin-top: 15px;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -261,117 +212,108 @@
     <div class="card-container">
         <!-- BANNER VA AVATAR ZONASI -->
         <div class="header-banner">
-              <!-- Orqa fonga katta albomniy rasm (Masalan: photo.png yoki banner.jpg) -->
-              <img src="photo.png" alt="Uz Brend G'ishtlari Banner" class="banner-img">
-        
-             <!-- BOTTOM-LEFT AVATAR (Kichik rasm/Logotip, Masalan: logo.png) -->
-             <div class="avatar-wrapper">
+            <img src="photo.png" alt="Uz Brend G'ishtlari Banner" class="banner-img">
+            <div class="avatar-wrapper">
                <img src="logo.png" alt="Avatar" class="avatar-img">
             </div>
         </div>
 
-<!-- MA'LUMOTLAR QISMI -->
+        <!-- MA'LUMOTLAR QISMI -->
+        <div class="content-wrapper">
+            <h1 class="brand-name">UZ BREND G'ISHTLARI</h1>
+            <div class="owner-name">SHOHRUX IBROHIMOV</div>
 
-<div class="content-wrapper">
-        <h1 class="brand-name">UZ BREND G'ISHTLARI</h1>
-        <div class="owner-name">SHOHRUX IBROHIMOV</div>
-    
+            <div class="badges">
+                <span class="badge">🛡️ Sifat</span>
+                <span class="badge">🧱 Ishonch</span>
+                <span class="badge">🤝 Mustahkamlik</span>
+            </div>
 
-        <div class="badges">
-            <span class="badge">🛡️ Sifat</span>
-            <span class="badge">🤝 Mustahkamlik</span>
-            <span class="badge">🧱 Ishonch</span>
-        </div>
+            <div class="products">
+                <div class="section-title">Bizda mavjud:</div>
 
-        <div class="products">
-            <div class="section-title">Bizda mavjud:</div>
+                <!-- Paltarashka g'isht -->
+                <div class="product-item">
+                    <div class="product-svg">
+                        <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="40" rx="4" fill="#E0533C"/>
+                            <!-- Teshiklar och fonga moslashtirildi -->
+                            <circle cx="8"  cy="10" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="17" cy="10" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="26" cy="10" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="34" cy="10" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="43" cy="10" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="52" cy="10" r="2.5" fill="#FFFFFF"/>
 
-            <!-- Paltarashka g'isht (Teshikli SVG) -->
-            <div class="product-item">
-                <div class="product-svg">
-                    <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="60" height="40" rx="4" fill="#E0533C"/>
-                        
-                        <!-- 1-qator (6 ta teshik) -->
-                        <circle cx="8"  cy="10" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="17" cy="10" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="26" cy="10" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="34" cy="10" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="43" cy="10" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="52" cy="10" r="2.5" fill="#1C1C1E"/>
+                            <circle cx="6"  cy="20" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="14" cy="20" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="22" cy="20" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="30" cy="20" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="38" cy="20" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="46" cy="20" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="54" cy="20" r="2.5" fill="#FFFFFF"/>
 
-                        <!-- 2-qator (7 ta teshik) -->
-                        <circle cx="6"  cy="20" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="14" cy="20" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="22" cy="20" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="30" cy="20" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="38" cy="20" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="46" cy="20" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="54" cy="20" r="2.5" fill="#1C1C1E"/>
-
-                        <!-- 3-qator (6 ta teshik) -->
-                        <circle cx="8"  cy="30" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="17" cy="30" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="26" cy="30" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="34" cy="30" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="43" cy="30" r="2.5" fill="#1C1C1E"/>
-                        <circle cx="52" cy="30" r="2.5" fill="#1C1C1E"/>
-                    </svg>
+                            <circle cx="8"  cy="30" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="17" cy="30" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="26" cy="30" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="34" cy="30" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="43" cy="30" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="52" cy="30" r="2.5" fill="#FFFFFF"/>
+                        </svg>
+                    </div>
+                    <span>"Paltarashka" g'isht 250x120x88 mm razmerli</span>
                 </div>
-                <span>"Paltarashka" g'isht 250x120x88 mm razmerli</span>
-            </div>
 
-            <!-- Standart g'isht (Teshiksiz SVG) -->
-            <div class="product-item">
-                <div class="product-svg">
-                    <svg width="60" height="30" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="60" height="30" rx="4" fill="#C8432D"/>
-                        <path d="M0 15 H60 M20 0 V15 M40 0 V15 M10 15 V30 M30 15 V30 M50 15 V30" stroke="#A3321F" stroke-width="2"/>
-                    </svg>
+                <!-- Standart g'isht -->
+                <div class="product-item">
+                    <div class="product-svg">
+                        <svg width="60" height="30" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="30" rx="4" fill="#C8432D"/>
+                            <path d="M0 15 H60 M20 0 V15 M40 0 V15 M10 15 V30 M30 15 V30 M50 15 V30" stroke="#A3321F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <span>"Standart" g'isht 250x120x65 mm razmerli</span>
                 </div>
-                <span>"Standart" g'isht 250x120x65 mm razmerli</span>
+
+                <!-- Yetkazib berish -->
+                <div class="product-item delivery-item">
+                    <span style="color: #4b5563; font-size: 13px;">🚛 Yetkazib berish Howo va Kamaz yuk mashinalarida amalga oshiriladi.</span>
+                </div>
             </div>
 
-            <!-- Yetkazib berish -->
-            <div class="product-item delivery-item">
-                <span style="color: #aaa;">🚛 Yetkazib berish Howo va Kamaz yuk mashinalarida amalga oshiriladi.</span>
+            <div class="section-title">Bog'lanish:</div>
+
+            <a href="tel:+998990972122" class="btn btn-phone">
+                📞 +998 99 097 21 22
+            </a>
+
+            <a href="tel:+998912822122" class="btn btn-phone">
+                📞 +998 91 282 21 22
+            </a>
+
+            <a href="contact.vcf" class="btn btn-amber">
+                📇 Kontaktni saqlash
+            </a>
+
+            <a href="https://t.me/+998912822122" target="_blank" class="btn btn-tg">
+                ✈️ Telegramga yozish 1
+            </a>
+
+            <a href="https://t.me/+998990972122" target="_blank" class="btn btn-tg">
+                ✈️ Telegramga yozish 2
+            </a>
+
+            <a href="https://instagram.com/SHOHR_UX1128" target="_blank" class="btn btn-insta">
+                📸 Instagram sahifamiz
+            </a>
+
+            <div class="footer">
+                © Uz Brend G'ishtlari. Barcha huquqlar himoyalangan.
             </div>
-        </div>
-
-        <div class="section-title">Bog'lanish:</div>
-
-        <a href="tel:+998990972122" class="btn btn-phone">
-            📞 +998 99 097 21 22
-        </a>
-
-        <a href="tel:+998912822122" class="btn btn-phone">
-            📞 +998 91 282 21 22
-        </a>
-
-           <a href="contact.vcf" class="btn btn-amber">
-              📇 Kontaktni saqlash
-           </a>
-
-
-        <a href="https://t.me/+998912822122" target="_blank" class="btn btn-tg">
-            ✈️ Telegramga yozish 1
-        </a>
-
-        <a href="https://t.me/+998990972122" target="_blank" class="btn btn-tg">
-            ✈️ Telegramga yozish 2
-        </a>
-
-        <a href="https://instagram.com/SHOHR_UX1128" target="_blank" class="btn btn-insta">
-            📸 Instagram sahifamiz
-        </a>
-
-
-        <div class="footer">
-            © Uz Brend G'ishtlari. Barcha huquqlar himoyalangan.
-        </div>
-        <!-- Mualliflik huquqi (Footer) -->
-        <div class="footer-copyright">
-            by <a href="https://t.me/EduPrintBooks" target="_blank" style="color: #888; text-decoration: none;">@EduPrintBooks</a>
+            
+            <div class="footer-copyright">
+                by <a href="https://t.me/EduPrintBooks" target="_blank" style="color: #6b7280; text-decoration: none;">@EduPrintBooks</a>
+            </div>
         </div>
     </div>
 
